@@ -18,12 +18,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 %matplotlib inline
 
-pl_id = 'spotify:playlist:37i9dQZF1EM9c2hyLZx2S9' # 2020
 
-pl_id = 'spotify:playlist:0twyebZntJEStjEzplkm01' # Mosaic
+pl_id = #Use your own playlist id
 
-client_id = "a914723bda7c45eeb3384c8e2746f63e"
-client_secret = "aa3621bf1544411284f8417c66259183"
+client_id = # Use your own client id
+client_secret =  # Use your own client secret
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
